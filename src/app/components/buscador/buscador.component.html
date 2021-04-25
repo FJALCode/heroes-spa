@@ -10,5 +10,5 @@
 </div>
 
 <div class="card-columns">
-  <app-heroe-tarjeta [heroeTarjeta]="heroe" [index]="heroe.id" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+  <app-heroe-tarjeta (hereoSeleccionado)="verHeroe($event)" [heroeTarjeta]="heroe" [index]="heroe.id" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
 </div>
